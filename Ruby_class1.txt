@@ -1,0 +1,47 @@
+1.Print message
+
+class Person
+    attr_accessor :name, :age
+    
+def initialize(name,age)
+    @name=name
+    @age=age
+end
+
+def greet
+    puts "Hello,my name is #{@name} and I am #{@age} years old"
+end
+end
+person=Person.new("Shruthi",27)
+person.greet
+
+2.Prime
+
+require 'prime'
+p Prime.first(10)
+
+
+3.Prime from 1 to 30
+
+require 'prime'
+Prime.each(30) do |prime|
+    puts prime
+end
+
+4.Addition of two numbers with input
+
+print "Enter first number: "
+num1= gets.chomp.to_i
+
+print"Enter second number: "
+num2= gets.chomp.to_i
+
+sum=num1+num2
+puts"The sum of #{num1} and #{num2} is #{sum} "
+
+#If user enters name\n it becomes 'name' with chomp 
+# removes\n\r and a string eg. chomp("o") from hello to hell
+
+
+
+ 
